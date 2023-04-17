@@ -1,6 +1,5 @@
 function solution(my_string) {
-    var answer = 0;
-    let number = my_string.replace(/[^0-9]/g, '').split('').map(el => parseInt(el));
-    
-    return number.reduce((sum, curr) =>  sum + curr);
+    let answer = my_string.match(/[0-9]/g).reduce((sum, curr) => sum + parseInt(curr),0);
+    console.log(answer)
+    return answer;
 }
