@@ -10,8 +10,6 @@ function solution(array, n) {
     
     if(arr[nIndex] - arr[nIndex-1] > arr[nIndex+1] - arr[nIndex] ){
         return arr[nIndex+1]
-    } else if(arr[nIndex] - arr[nIndex-1] === arr[nIndex+1] - arr[nIndex]) {
-        return arr[nIndex-1]
     } else {return arr[nIndex-1]}
 
 }
