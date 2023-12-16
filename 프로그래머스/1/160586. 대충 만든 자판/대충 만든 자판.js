@@ -12,7 +12,7 @@ function solution(keymap, targets) {
             }
         }        
     }
-    // console.log(map)
+    console.log(map)
     for(let word of targets) {
         let point = 0;
         let arr = word.split('');
@@ -22,7 +22,7 @@ function solution(keymap, targets) {
         
         point ? answer.push(point) : answer.push(-1);
     }
-    // console.log(answer)
+    console.log('answer', answer)
 
     return answer.length == 0 ? [-1] : answer;
 }
